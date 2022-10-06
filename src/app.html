@@ -4,9 +4,18 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
-		%sveltekit.head%
 	</head>
-	<body data-sveltekit-prefetch>
-		<div>%sveltekit.body%</div>
+	<body>
+		<form name="contact" netlify>
+			<p>
+			  <label>Name <input type="text" name="name" /></label>
+			</p>
+			<p>
+			  <label>Email <input type="email" name="email" /></label>
+			</p>
+			<p>
+			  <button type="submit">Send</button>
+			</p>
+		  </form>
 	</body>
 </html>
